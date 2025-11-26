@@ -7,47 +7,81 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- NAVBAR -->
+  <!-- NAVBAR — only Home · Portfolio · Contact (home page) -->
   <nav class="nav">
     <div class="nav-inner">
       <div class="nav-brand">VAIBHAV MARVANIYA</div>
       <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">Profile</a>
-        <a href="skills.html">Skills</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+        <a href="#top">Home</a>
+        <a href="#featured-games">Portfolio</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </nav>
 
   <main id="top">
-    <!-- HERO -->
+    <!-- HERO (name, role, merged summary + key achievements paragraph) -->
     <section class="hero">
-      <div class="hero-kicker">Senior Unity Developer &amp; Team Lead</div>
+      <div class="hero-kicker">Senior Unity Developer &amp; Unity Team Lead</div>
       <h1 class="hero-title">Vaibhav Marvaniya</h1>
       <p class="hero-subtitle">8+ years building &amp; shipping Unity games</p>
 
       <p class="hero-text">
-        I help studios and publishers bring Unity games from idea to launch:
-        prototypes, production, SDK integrations, optimization, and mentoring dev teams.
-        Below are some of the shipped games I’ve contributed to as a Unity developer and lead.
+        Unity Team Lead with hands-on delivery across hyper-casual, casual, puzzle, action and simulation.
+        I take games from idea to launch—prototyping, production, SDK integrations (ads/analytics/IAP/auth/datastore),
+        optimization and mentoring teams. I’ve collaborated with publishers like Voodoo, Supersonic, Lion Studios, Homa,
+        BoomHits, AppCentral and Moonee, contributed to SDKs and internal tools, created AI-assisted Unity pipelines
+        that sped up prototypes by 50%+, optimized live projects, fixed critical issues, and built a studio from scratch
+        while maintaining strong standards and data-driven execution. :contentReference[oaicite:5]{index=5} :contentReference[oaicite:6]{index=6}
       </p>
-
-      <div class="hero-actions">
-        <a href="#featured-games" class="btn btn-primary">View featured games</a>
-        <a href="experience.html" class="btn btn-outline">See work history</a>
-        <a href="contact.html" class="btn btn-outline">Contact &amp; resume</a>
-      </div>
-
-      <p class="hero-note">
-        Based in Ahmedabad · Open to full-time &amp; remote opportunities
-      </p>
+      <!-- optional photo like the reference site:
+      <img class="hero-photo" src="your-photo.jpg" alt="Vaibhav Marvaniya" loading="lazy">
+      -->
     </section>
 
+    <!-- SKILLS + EDUCATION -->
+    <section class="container card" id="skills-edu">
+      <h2>Skills &amp; Education</h2>
+      <div class="two-col">
+        <div>
+          <p><strong>Core</strong></p>
+          <p class="pill-row">
+            <span class="pill">Unity 2D/3D</span>
+            <span class="pill">C#</span>
+            <span class="pill">Gameplay</span>
+            <span class="pill">Prototyping</span>
+            <span class="pill">Optimization</span>
+            <span class="pill">Team Leadership</span>
+            <span class="pill">Git / GitHub / Sourcetree</span>
+          </p>
+
+          <p><strong>Monetization &amp; Analytics</strong></p>
+          <p class="pill-row">
+            <span class="pill">Unity Ads</span>
+            <span class="pill">AdMob</span>
+            <span class="pill">ironSource</span>
+            <span class="pill">AppLovin MAX</span>
+            <span class="pill">Firebase</span>
+            <span class="pill">GameAnalytics</span>
+            <span class="pill">Unity IAP</span>
+            <span class="pill">AppsFlyer</span>
+            <span class="pill">Adjust</span>
+          </p>
+        </div>
+
+        <div>
+          <p><strong>Education</strong></p>
+          <ul class="edu">
+            <li><strong>B.E. (Computer Engineering)</strong> — SAL Institute of Technology &amp; Engineering Research, Ahmedabad (2012–2016).</li>
+          </ul>
+          <p class="muted small">Full timeline/certifications are in my <a href="resume.pdf" target="_blank" rel="noopener">resume</a>. :contentReference[oaicite:7]{index=7}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== YOUR EXISTING PORTFOLIO (UNCHANGED) ===== -->
     <div class="container">
-      <!-- WHAT I DO -->
+      <!-- WHAT I DO (kept) -->
       <section class="card">
         <h2>What I do</h2>
         <p>
@@ -58,7 +92,7 @@
         </p>
       </section>
 
-      <!-- FEATURED GAMES -->
+      <!-- FEATURED GAMES (exact copy of your current index.html) -->
       <section class="card" id="featured-games">
         <h2>Featured Games</h2>
         <p class="section-subtitle">
@@ -66,6 +100,7 @@
         </p>
 
         <div class="games-list">
+          <!-- BEGIN: VERBATIM FROM YOUR CURRENT FILE -->
           <!-- 1. Hyper Hostess -->
           <div class="game-row">
             <div class="game-row-media">
@@ -74,11 +109,9 @@
                 <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.funcell.hyperhostess" target="_blank">
                   Google Play
                 </a>
-                <!-- TODO: if there is an App Store link, replace below -->
                 <a class="store-btn" href="https://apps.apple.com/us/app/hyper-hostess/id1616157684" target="_blank">
                   App Store
                 </a>
-                <!-- TODO: replace with trailer link -->
               </div>
             </div>
 
@@ -109,7 +142,6 @@
                 <a class="store-btn" href="https://apps.apple.com/us/app/daily-routine-3d/id6462640915" target="_blank">
                   App Store
                 </a>
-                <!-- TODO: replace with trailer link -->
               </div>
             </div>
 
@@ -140,7 +172,6 @@
                 <a class="store-btn" href="https://apps.apple.com/us/app/pills-sort/id6476477662" target="_blank">
                   App Store
                 </a>
-                <!-- TODO: replace with trailer link -->
               </div>
             </div>
 
@@ -165,15 +196,12 @@
             <div class="game-row-media">
               <img src="icons/color-screw.png" alt="Color Screw Unscrew &amp; Match icon" />
               <div class="store-buttons">
-                <!-- TODO: replace with actual Play Store link -->
                 <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gameyogi.screwmaster" target="_blank">
                   Google Play
                 </a>
-                <!-- TODO: replace with actual App Store link -->
                 <a class="store-btn" href="https://apps.apple.com/us/app/color-screw-unscrew-and-match/id6477688910" target="_blank">
                   App Store
                 </a>
-                <!-- TODO: replace with trailer link -->
               </div>
             </div>
 
@@ -198,15 +226,12 @@
             <div class="game-row-media">
               <img src="icons/nut-sort.png" alt="Nut Sort – Color Match icon" />
               <div class="store-buttons">
-                <!-- TODO: replace with actual Play Store link -->
                 <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gameyogi.nutsortmatch" target="_blank">
                   Google Play
                 </a>
-                <!-- TODO: replace with actual App Store link -->
                 <a class="store-btn" href="https://apps.apple.com/us/app/nut-sort-color-match/id6484068013" target="_blank">
                   App Store
                 </a>
-                <!-- TODO: replace with trailer link -->
               </div>
             </div>
 
@@ -231,12 +256,9 @@
             <div class="game-row-media">
               <img src="icons/crazy-bar-brawl.png" alt="Crazy Bar Brawl icon" />
               <div class="store-buttons">
-                <!-- TODO: replace with actual Play Store link -->
                 <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.ultragames.crazybarbrawl" target="_blank">
                   Google Play
                 </a>
-                <!-- TODO: if there is an App Store link, add it here -->
-                <!-- TODO: replace with trailer link -->
               </div>
             </div>
 
@@ -261,11 +283,9 @@
             <div class="game-row-media">
               <img src="icons/mini-shooters.png" alt="Mini Shooters icon" />
               <div class="store-buttons">
-                <!-- TODO: replace with actual store / APK link -->
                 <a class="store-btn" href="https://apkpure.net/mini-shooters-battleground-sh/com.shootersbattlegroundshootinggame.battlegroundshooting" target="_blank">
                   Google Play / APK
                 </a>
-                <!-- TODO: replace with trailer link -->
               </div>
             </div>
 
@@ -290,11 +310,9 @@
             <div class="game-row-media">
               <img src="icons/modern-force.png" alt="Modern Force Multiplayer Online icon" />
               <div class="store-buttons">
-                <!-- TODO: replace with actual store / APK link -->
                 <a class="store-btn" href="https://apkpure.net/modern-force-multiplayer-online-shooting-game/com.modernforceonlline.multiplayer.freemuliplayeronlinegames" target="_blank">
                   Google Play / APK
                 </a>
-                <!-- TODO: replace with trailer link -->
               </div>
             </div>
 
@@ -318,15 +336,12 @@
             <div class="game-row-media">
               <img src="icons/merge-glow.png" alt="Merge Glow – Fashion Design icon" />
               <div class="store-buttons">
-                <!-- TODO: replace with actual Play Store link -->
                 <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gameyogi.mergeglow" target="_blank">
                   Google Play
                 </a>
-                <!-- TODO: replace with actual App Store link -->
                 <a class="store-btn" href="https://apps.apple.com/us/app/merge-glow-fashion-design/id6748054851" target="_blank">
                   App Store
                 </a>
-                <!-- TODO: replace with trailer link -->
               </div>
             </div>
 
@@ -345,9 +360,78 @@
               </ul>
             </div>
           </div>
+          <!-- END: VERBATIM -->
+        </div>
+
+        <!-- Added button linking to full portfolio page -->
+        <div class="center mt-lg">
+          <a class="btn btn-primary" href="projects.html">More games &amp; prototypes</a>
         </div>
       </section>
     </div>
+
+    <!-- EXPERIENCE (Milestones with dashed arrows) -->
+    <section class="section" id="experience">
+      <h2 class="section-title">Milestones</h2>
+      <ol class="milestones">
+        <li class="mile">
+          <div class="mile-box">
+            <div class="mile-meta">Aug 2023 – Present</div>
+            <h3 class="mile-title">Unity Team Lead — Gameyogi Pvt. Ltd.</h3>
+            <p class="muted">Built the Unity team from scratch; hands-on SDK integrations, meta, and pipelines. Standardized projects & Git flow. :contentReference[oaicite:8]{index=8}</p>
+          </div>
+        </li>
+        <li class="mile">
+          <div class="mile-box">
+            <div class="mile-meta">Oct 2021 – Jul 2023</div>
+            <h3 class="mile-title">Senior Unity Developer — Funcell Games</h3>
+            <p class="muted">Solo-delivered “Hyper Hostess”, integrated Wisdom/IAP/analytics; shipped multiple titles with publishers. :contentReference[oaicite:9]{index=9}</p>
+          </div>
+        </li>
+        <li class="mile">
+          <div class="mile-box">
+            <div class="mile-meta">Jul 2020 – Sep 2021</div>
+            <h3 class="mile-title">Unity Developer — Ultragames Entertainment</h3>
+            <p class="muted">Real-money card games, AR, and hyper-casual; created/optimized titles for submissions. :contentReference[oaicite:10]{index=10}</p>
+          </div>
+        </li>
+        <li class="mile">
+          <div class="mile-box">
+            <div class="mile-meta">Jan 2019 – Jul 2020</div>
+            <h3 class="mile-title">Unity Developer — Dweek Studios</h3>
+            <p class="muted">Merged 5 projects, used AssetBundles to cut size/startup; Play Store submissions & ANR fixes. :contentReference[oaicite:11]{index=11}</p>
+          </div>
+        </li>
+        <li class="mile">
+          <div class="mile-box">
+            <div class="mile-meta">May 2017 – Jan 2019</div>
+            <h3 class="mile-title">Jr. Unity 3D Developer — iDivineCreation</h3>
+            <p class="muted">Multiplayer shooters/racing using Photon & UNET; improved QA efficiency and bug resolution. :contentReference[oaicite:12]{index=12}</p>
+          </div>
+        </li>
+      </ol>
+      <p class="muted small mt-md">Dashed curved arrows indicate progression between roles.</p>
+    </section>
+
+    <!-- CONTACT (ending) -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p class="lead"><strong>Let’s work together.</strong> Open to full-time roles & collaborations.</p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:vaibhav.mv76@gmail.com">vaibhav.mv76@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+917405957677">+91&nbsp;7405957677</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vaibhav-mv" target="_blank" rel="noopener">vaibhav-mv</a></li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+        </div>
+        <!-- optional portrait like reference site -->
+        <!-- <img class="contact-photo" src="your-photo.jpg" alt="Vaibhav portrait" loading="lazy"> -->
+      </div>
+    </section>
 
     <div class="footer">
       © <span id="year"></span> Vaibhav Marvaniya · Built with HTML &amp; GitHub Pages
