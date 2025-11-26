@@ -4,10 +4,7 @@
   <meta charset="UTF-8" />
   <title>Contact | Vaibhav Marvaniya</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- same CSS as index.html -->
-  <style>
-    /* same CSS from index.html */
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <nav class="nav">
@@ -61,6 +58,14 @@
         </p>
       </section>
     </div>
+
+    <div class="footer">
+      © <span id="year"></span> Vaibhav Marvaniya · Built with HTML & GitHub Pages
+    </div>
   </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
