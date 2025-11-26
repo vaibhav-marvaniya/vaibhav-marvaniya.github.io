@@ -212,7 +212,7 @@ section.card .section-subtitle {
   margin-bottom: 0.18rem;
 }
 
-/* Projects */
+/* Projects list (other pages) */
 .project {
   margin-bottom: 1.25rem;
 }
@@ -232,6 +232,83 @@ section.card .section-subtitle {
   font-size: 0.86rem;
   color: #4b5563;
   margin-bottom: 0.18rem;
+}
+
+/* FEATURED GAMES GRID (home page) */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.game-card {
+  display: flex;
+  gap: 0.9rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 0.9rem;
+  align-items: flex-start;
+}
+
+.game-icon {
+  flex: 0 0 auto;
+}
+
+.game-icon img {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+.game-body {
+  flex: 1;
+}
+
+.game-title {
+  margin: 0 0 0.15rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.game-tagline {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.game-desc {
+  margin: 0.4rem 0 0.35rem;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.game-role-title {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.game-role-list {
+  margin: 0.25rem 0 0.35rem;
+  padding-left: 1rem;
+}
+.game-role-list li {
+  font-size: 0.82rem;
+  color: #4b5563;
+  margin-bottom: 0.15rem;
+}
+
+.game-links {
+  margin: 0;
+  font-size: 0.8rem;
+}
+.game-links a {
+  margin-right: 0.4rem;
 }
 
 /* Footer */
@@ -258,5 +335,11 @@ section.card .section-subtitle {
   }
   .hero-title {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-card {
+    flex-direction: row;
   }
 }
