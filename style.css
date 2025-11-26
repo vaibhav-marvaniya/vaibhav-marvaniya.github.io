@@ -1,5 +1,5 @@
 :root {
-  --bg: #ffffff;      /* main background (now all white) */
+  --bg: #ffffff;      /* main background */
   --text: #111827;
   --muted: #6b7280;
   --accent: #2563eb;
@@ -42,7 +42,7 @@ a:hover {
 }
 
 .nav-inner {
-  max-width: 1200px; /* wider than before */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0.7rem 1.5rem;
   display: flex;
@@ -67,21 +67,21 @@ a:hover {
 
 /* LAYOUT */
 .container {
-  max-width: 1200px;   /* use more horizontal space */
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1.5rem 3rem;
 }
 
-/* Generic card section – same background everywhere now */
+/* Generic section */
 section.card {
   margin-top: 2rem;
-  background: var(--bg);   /* same as body */
-  padding: 1.7rem 0;       /* remove inner white card, more “full width” feel */
+  background: var(--bg);
+  padding: 1.7rem 0;
   border-radius: 0;
   box-shadow: none;
   border: none;
-  border-bottom: 1px solid var(--border); /* subtle divider */
+  border-bottom: 1px solid var(--border);
 }
 
 section.card:last-of-type {
@@ -98,7 +98,7 @@ section.card .section-subtitle {
   color: var(--muted);
 }
 
-/* HERO (for home page if you use it) */
+/* HERO (home page) */
 .hero {
   padding: 3rem 1.5rem 2.5rem;
   text-align: center;
@@ -164,6 +164,10 @@ section.card .section-subtitle {
   border-color: var(--accent);
   background: var(--accent-soft);
 }
+.hero-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
 
 /* Pills / tags */
 .pill {
@@ -208,7 +212,7 @@ section.card .section-subtitle {
   margin-bottom: 0.18rem;
 }
 
-/* Project blocks */
+/* Projects */
 .project {
   margin-bottom: 1.25rem;
 }
