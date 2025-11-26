@@ -4,178 +4,7 @@
   <meta charset="UTF-8" />
   <title>Home | Vaibhav Marvaniya</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    :root {
-      --bg: #f5f5f5;
-      --bg-alt: #ffffff;
-      --text: #111827;
-      --muted: #6b7280;
-      --accent: #2563eb;
-      --accent-soft: #dbeafe;
-      --border: #e5e7eb;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-
-    /* NAVBAR */
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      background: rgba(245, 245, 245, 0.96);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border);
-    }
-    .nav-inner {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0.7rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .nav-brand {
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      font-size: 0.9rem;
-    }
-    .nav-links a {
-      margin-left: 1.25rem;
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-    .nav-links a:hover { color: var(--accent); }
-
-    /* HERO */
-    .hero {
-      padding: 3rem 1rem 2.5rem;
-      text-align: center;
-    }
-    .hero-kicker {
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--accent);
-      font-weight: 600;
-    }
-    .hero-title {
-      margin: 0.75rem 0 0.25rem;
-      font-size: 2.4rem;
-      letter-spacing: 0.08em;
-    }
-    .hero-subtitle {
-      margin: 0;
-      font-size: 1.1rem;
-      color: var(--muted);
-      font-weight: 500;
-    }
-    .hero-text {
-      max-width: 640px;
-      margin: 1.3rem auto 1.8rem;
-      color: #4b5563;
-      line-height: 1.6;
-      font-size: 0.98rem;
-    }
-    .hero-actions {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1.3rem;
-    }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.6rem 1.4rem;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      font-size: 0.95rem;
-      font-weight: 500;
-      cursor: pointer;
-      text-decoration: none;
-      white-space: nowrap;
-    }
-    .btn-primary {
-      background: var(--accent);
-      color: #ffffff;
-    }
-    .btn-primary:hover { background: #1d4ed8; }
-    .btn-outline {
-      background: transparent;
-      color: var(--accent);
-      border-color: var(--accent-soft);
-    }
-    .btn-outline:hover {
-      border-color: var(--accent);
-      background: var(--accent-soft);
-    }
-    .hero-note {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 1rem 3rem;
-    }
-    section.card {
-      margin-top: 2.1rem;
-      background: var(--bg-alt);
-      padding: 1.7rem 1.5rem;
-      border-radius: 16px;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
-      border: 1px solid rgba(148, 163, 184, 0.18);
-    }
-    section.card h2 {
-      margin-top: 0;
-      font-size: 1.35rem;
-    }
-    section.card p {
-      font-size: 0.95rem;
-      color: #4b5563;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--muted);
-      padding: 0 1rem 1.5rem;
-    }
-
-    @media (max-width: 768px) {
-      .nav-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3rem;
-      }
-      .nav-links a {
-        margin-left: 0;
-        margin-right: 0.9rem;
-      }
-      .hero-title {
-        font-size: 2rem;
-      }
-      .hero {
-        padding-top: 2.3rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- NAVBAR -->
@@ -193,7 +22,6 @@
     </div>
   </nav>
 
-  <!-- HERO -->
   <main id="top">
     <section class="hero">
       <div class="hero-kicker">Senior Unity Developer & Team Lead</div>
@@ -225,13 +53,6 @@
           and leading small teams to ship hyper-casual, casual, puzzle, and simulation titles.
           I’ve worked with publishers including Voodoo, Supersonic, Lion Studios, Homa, BoomHits,
           AppCentral and Moonee.
-        </p>
-        <p>
-          Use the navigation above to see detailed information on my
-          <a href="about.html">profile</a>,
-          <a href="skills.html">skills</a>,
-          <a href="projects.html">projects</a>,
-          and <a href="experience.html">experience</a>.
         </p>
       </section>
     </div>
