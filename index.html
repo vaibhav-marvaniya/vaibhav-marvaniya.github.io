@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- NAVBAR — only Home · Portfolio · Contact (home page) -->
+  <!-- NAVBAR: Home / Portfolio / Contact -->
   <nav class="nav">
     <div class="nav-inner">
       <div class="nav-brand">VAIBHAV MARVANIYA</div>
@@ -20,79 +20,84 @@
   </nav>
 
   <main id="top">
-    <!-- HERO (name, role, merged summary + key achievements paragraph) -->
+    <!-- HOME: HERO -->
     <section class="hero">
       <div class="hero-kicker">Senior Unity Developer &amp; Unity Team Lead</div>
       <h1 class="hero-title">Vaibhav Marvaniya</h1>
-      <p class="hero-subtitle">8+ years building &amp; shipping Unity games</p>
-
+      <p class="hero-subtitle">8 years building &amp; shipping Unity games</p>
       <p class="hero-text">
         Unity Team Lead with hands-on delivery across hyper-casual, casual, puzzle, action and simulation.
         I take games from idea to launch—prototyping, production, SDK integrations (ads/analytics/IAP/auth/datastore),
-        optimization and mentoring teams. I’ve collaborated with publishers like Voodoo, Supersonic, Lion Studios, Homa,
-        BoomHits, AppCentral and Moonee, contributed to SDKs and internal tools, created AI-assisted Unity pipelines
-        that sped up prototypes by 50%+, optimized live projects, fixed critical issues, and built a studio from scratch
-        while maintaining strong standards and data-driven execution. :contentReference[oaicite:5]{index=5} :contentReference[oaicite:6]{index=6}
+        optimization and mentoring teams. I’ve collaborated with publishers like Voodoo, Supersonic, Lion Studios,
+        Homa, BoomHits, AppCentral and Moonee, contributed to SDKs and internal tools, created AI-assisted Unity
+        pipelines that sped up prototypes, optimized live projects, fixed critical issues, and built a studio from
+        scratch while maintaining strong standards and data-driven execution.
       </p>
-      <!-- optional photo like the reference site:
-      <img class="hero-photo" src="your-photo.jpg" alt="Vaibhav Marvaniya" loading="lazy">
-      -->
+      <!-- optional photo -->
+      <!-- <img class="hero-photo" src="your-photo.jpg" alt="Vaibhav Marvaniya" loading="lazy" /> -->
     </section>
 
-    <!-- SKILLS + EDUCATION -->
-    <section class="container card" id="skills-edu">
-      <h2>Skills &amp; Education</h2>
-      <div class="two-col">
-        <div>
-          <p><strong>Core</strong></p>
-          <p class="pill-row">
-            <span class="pill">Unity 2D/3D</span>
-            <span class="pill">C#</span>
-            <span class="pill">Gameplay</span>
-            <span class="pill">Prototyping</span>
-            <span class="pill">Optimization</span>
-            <span class="pill">Team Leadership</span>
-            <span class="pill">Git / GitHub / Sourcetree</span>
-          </p>
-
-          <p><strong>Monetization &amp; Analytics</strong></p>
-          <p class="pill-row">
-            <span class="pill">Unity Ads</span>
-            <span class="pill">AdMob</span>
-            <span class="pill">ironSource</span>
-            <span class="pill">AppLovin MAX</span>
-            <span class="pill">Firebase</span>
-            <span class="pill">GameAnalytics</span>
-            <span class="pill">Unity IAP</span>
-            <span class="pill">AppsFlyer</span>
-            <span class="pill">Adjust</span>
-          </p>
-        </div>
-
-        <div>
-          <p><strong>Education</strong></p>
-          <ul class="edu">
-            <li><strong>B.E. (Computer Engineering)</strong> — SAL Institute of Technology &amp; Engineering Research, Ahmedabad (2012–2016).</li>
-          </ul>
-          <p class="muted small">Full timeline/certifications are in my <a href="resume.pdf" target="_blank" rel="noopener">resume</a>. :contentReference[oaicite:7]{index=7}</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== YOUR EXISTING PORTFOLIO (UNCHANGED) ===== -->
     <div class="container">
-      <!-- WHAT I DO (kept) -->
+      <!-- HOME: SKILLS & EDUCATION -->
+      <section class="card" id="skills-edu">
+        <h2>Skills &amp; Education</h2>
+        <div class="two-col">
+          <div>
+            <p><strong>Core</strong></p>
+            <p class="pill-row">
+              <span class="pill">Unity 2D/3D</span>
+              <span class="pill">C#</span>
+              <span class="pill">Gameplay</span>
+              <span class="pill">Prototyping</span>
+              <span class="pill">Optimization</span>
+              <span class="pill">Team Leadership</span>
+              <span class="pill">Git / GitHub / Sourcetree</span>
+            </p>
+
+            <p><strong>Monetization &amp; Analytics</strong></p>
+            <p class="pill-row">
+              <span class="pill">Unity Ads</span>
+              <span class="pill">AdMob</span>
+              <span class="pill">ironSource</span>
+              <span class="pill">AppLovin MAX</span>
+              <span class="pill">Firebase</span>
+              <span class="pill">GameAnalytics</span>
+              <span class="pill">Unity IAP</span>
+              <span class="pill">AppsFlyer</span>
+              <span class="pill">Adjust</span>
+            </p>
+          </div>
+
+          <div>
+            <p><strong>Education</strong></p>
+            <ul class="edu">
+              <li>
+                <strong>B.E. Computer Engineering</strong> — SAL Institute of Technology &amp; Engineering Research,
+                Ahmedabad (2012–2016).
+              </li>
+            </ul>
+            <p class="muted small">
+              Full timeline and certifications are in my
+              <a href="resume.pdf" target="_blank" rel="noopener">resume</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOME: WHAT I DO (short, stays under Home) -->
       <section class="card">
         <h2>What I do</h2>
+        <p class="section-subtitle">
+          Unity 2D/3D game development, SDK integrations, and leading small teams to ship mobile titles.
+        </p>
         <p>
-          I specialize in Unity 2D/3D game development, SDK integrations (ads, analytics, IAP),
-          and leading small teams to ship hyper-casual, casual, puzzle, and simulation titles.
-          I’ve worked with publishers including Voodoo, Supersonic, Lion Studios, Homa, BoomHits,
-          AppCentral and Moonee.
+          I specialize in Unity game development, SDK integrations (ads, analytics, IAP), and leading teams to ship
+          hyper-casual, casual, puzzle and simulation titles. I’ve worked with publishers including Voodoo, Supersonic,
+          Lion Studios, Homa, BoomHits, AppCentral and Moonee.
         </p>
       </section>
 
-      <!-- FEATURED GAMES (exact copy of your current index.html) -->
+      <!-- PORTFOLIO: FEATURED GAMES -->
       <section class="card" id="featured-games">
         <h2>Featured Games</h2>
         <p class="section-subtitle">
@@ -100,27 +105,20 @@
         </p>
 
         <div class="games-list">
-          <!-- BEGIN: VERBATIM FROM YOUR CURRENT FILE -->
           <!-- 1. Hyper Hostess -->
           <div class="game-row">
             <div class="game-row-media">
-              <img src="icons/hyper-hostess.png" alt="Hyper Hostess icon" />
+              <img src="icons/hyper-hostess.png" alt="Hyper Hostess icon" loading="lazy" />
               <div class="store-buttons">
-                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.funcell.hyperhostess" target="_blank">
-                  Google Play
-                </a>
-                <a class="store-btn" href="https://apps.apple.com/us/app/hyper-hostess/id1616157684" target="_blank">
-                  App Store
-                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.funcell.hyperhostess" target="_blank">Google Play</a>
+                <a class="store-btn" href="https://apps.apple.com/us/app/hyper-hostess/id1616157684" target="_blank">App Store</a>
               </div>
             </div>
-
             <div class="game-row-body">
               <h3 class="game-title">Hyper Hostess</h3>
               <p class="game-tagline">Hyper-casual · Funcell Games</p>
               <p class="game-desc">
-                Hyper-casual game where players manage flights and passengers in fast, satisfying loops
-                focused on clear visual feedback and quick decision-making.
+                Hyper-casual game where players manage flights and passengers in fast loops with clear visual feedback and quick decisions.
               </p>
               <p class="game-role-title">My role</p>
               <ul class="game-role-list">
@@ -134,29 +132,23 @@
           <!-- 2. Daily Routine 3D -->
           <div class="game-row">
             <div class="game-row-media">
-              <img src="icons/daily-routine-3d.png" alt="Daily Routine 3D icon" />
+              <img src="icons/daily-routine-3d.png" alt="Daily Routine 3D icon" loading="lazy" />
               <div class="store-buttons">
-                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.funcell.dailyroutine" target="_blank">
-                  Google Play
-                </a>
-                <a class="store-btn" href="https://apps.apple.com/us/app/daily-routine-3d/id6462640915" target="_blank">
-                  App Store
-                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.funcell.dailyroutine" target="_blank">Google Play</a>
+                <a class="store-btn" href="https://apps.apple.com/us/app/daily-routine-3d/id6462640915" target="_blank">App Store</a>
               </div>
             </div>
-
             <div class="game-row-body">
               <h3 class="game-title">Daily Routine 3D</h3>
               <p class="game-tagline">Life simulation · Funcell Games</p>
               <p class="game-desc">
-                A life-sim where players manage everyday activities and progress through different life
-                stages, supported by varied short-session gameplay.
+                Life-sim where players manage everyday activities and progress through different life stages in short sessions.
               </p>
               <p class="game-role-title">My role</p>
               <ul class="game-role-list">
                 <li>Implemented core life-simulation flow and progression in Unity.</li>
                 <li>Designed and developed multiple mini-games to keep sessions fresh.</li>
-                <li>Focused on clear, readable interactions and smooth moment-to-moment play.</li>
+                <li>Focused on clear interactions and smooth moment-to-moment play.</li>
               </ul>
             </div>
           </div>
@@ -164,28 +156,22 @@
           <!-- 3. Pills Sort -->
           <div class="game-row">
             <div class="game-row-media">
-              <img src="icons/pills-sort.png" alt="Pills Sort icon" />
+              <img src="icons/pills-sort.png" alt="Pills Sort icon" loading="lazy" />
               <div class="store-buttons">
-                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.funcell.pillssort" target="_blank">
-                  Google Play
-                </a>
-                <a class="store-btn" href="https://apps.apple.com/us/app/pills-sort/id6476477662" target="_blank">
-                  App Store
-                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.funcell.pillssort" target="_blank">Google Play</a>
+                <a class="store-btn" href="https://apps.apple.com/us/app/pills-sort/id6476477662" target="_blank">App Store</a>
               </div>
             </div>
-
             <div class="game-row-body">
               <h3 class="game-title">Pills Sort</h3>
               <p class="game-tagline">Puzzle · Funcell Games</p>
               <p class="game-desc">
-                Physics-based sorting puzzle with tactile interactions and a clean, repeatable sorting loop
-                across levels.
+                Physics-based sorting puzzle with tactile interactions and a repeatable, satisfying sorting loop.
               </p>
               <p class="game-role-title">My role</p>
               <ul class="game-role-list">
                 <li>Developed the core sorting logic and physics-based interactions.</li>
-                <li>Tuned responsiveness and clarity of the sorting loop across multiple levels.</li>
+                <li>Tuned responsiveness and clarity of the loop across levels.</li>
                 <li>Optimized performance for stable play across devices.</li>
               </ul>
             </div>
@@ -194,58 +180,46 @@
           <!-- 4. Color Screw Unscrew & Match -->
           <div class="game-row">
             <div class="game-row-media">
-              <img src="icons/color-screw.png" alt="Color Screw Unscrew &amp; Match icon" />
+              <img src="icons/color-screw.png" alt="Color Screw Unscrew &amp; Match icon" loading="lazy" />
               <div class="store-buttons">
-                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gameyogi.screwmaster" target="_blank">
-                  Google Play
-                </a>
-                <a class="store-btn" href="https://apps.apple.com/us/app/color-screw-unscrew-and-match/id6477688910" target="_blank">
-                  App Store
-                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gameyogi.screwmaster" target="_blank">Google Play</a>
+                <a class="store-btn" href="https://apps.apple.com/us/app/color-screw-unscrew-and-match/id6477688910" target="_blank">App Store</a>
               </div>
             </div>
-
             <div class="game-row-body">
               <h3 class="game-title">Color Screw Unscrew &amp; Match</h3>
               <p class="game-tagline">Puzzle · Gameyogi</p>
               <p class="game-desc">
-                Screw-and-match puzzle game with a strong focus on monetization, scalability, and smooth
-                user experience.
+                Screw-and-match puzzle focused on monetization, scalability, and smooth user experience.
               </p>
               <p class="game-role-title">My role</p>
               <ul class="game-role-list">
                 <li>Led development and launch from Unity implementation to polish.</li>
                 <li>Integrated AdMob and ironSource mediation for A/B testing and revenue optimization.</li>
-                <li>Tuned performance and stability to handle a wide device range.</li>
+                <li>Tuned performance and stability for a wide device range.</li>
               </ul>
             </div>
           </div>
 
-          <!-- 5. Nut Sort – Color Match -->
+          <!-- 5. Nut Sort Color Match -->
           <div class="game-row">
             <div class="game-row-media">
-              <img src="icons/nut-sort.png" alt="Nut Sort – Color Match icon" />
+              <img src="icons/nut-sort.png" alt="Nut Sort Color Match icon" loading="lazy" />
               <div class="store-buttons">
-                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gameyogi.nutsortmatch" target="_blank">
-                  Google Play
-                </a>
-                <a class="store-btn" href="https://apps.apple.com/us/app/nut-sort-color-match/id6484068013" target="_blank">
-                  App Store
-                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gameyogi.nutsortmatch" target="_blank">Google Play</a>
+                <a class="store-btn" href="https://apps.apple.com/us/app/nut-sort-color-match/id6484068013" target="_blank">App Store</a>
               </div>
             </div>
-
             <div class="game-row-body">
-              <h3 class="game-title">Nut Sort – Color Match</h3>
+              <h3 class="game-title">Nut Sort Color Match</h3>
               <p class="game-tagline">Puzzle · Gameyogi</p>
               <p class="game-desc">
-                Color-sorting puzzle with approachable level flow and steady pacing designed for casual
-                players.
+                Color-sorting puzzle with approachable level flow and steady pacing for casual players.
               </p>
               <p class="game-role-title">My role</p>
               <ul class="game-role-list">
-                <li>Led development and launch with a focus on performance and scalability.</li>
-                <li>Implemented AdMob with mediation to test and improve ad performance.</li>
+                <li>Led development and launch with focus on performance and scalability.</li>
+                <li>Implemented AdMob with mediation to improve ad performance.</li>
                 <li>Refined level flow to keep sessions clear and satisfying.</li>
               </ul>
             </div>
@@ -254,26 +228,22 @@
           <!-- 6. Crazy Bar Brawl -->
           <div class="game-row">
             <div class="game-row-media">
-              <img src="icons/crazy-bar-brawl.png" alt="Crazy Bar Brawl icon" />
+              <img src="icons/crazy-bar-brawl.png" alt="Crazy Bar Brawl icon" loading="lazy" />
               <div class="store-buttons">
-                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.ultragames.crazybarbrawl" target="_blank">
-                  Google Play
-                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.ultragames.crazybarbrawl" target="_blank">Google Play</a>
               </div>
             </div>
-
             <div class="game-row-body">
               <h3 class="game-title">Crazy Bar Brawl</h3>
               <p class="game-tagline">Action · Ultragames Entertainment</p>
               <p class="game-desc">
-                Physics-driven bar-fight brawler with ragdoll characters and chaotic, fun combat scenarios
-                built for mobile.
+                Physics-driven bar-fight brawler with ragdoll characters and chaotic, fun combat for mobile.
               </p>
               <p class="game-role-title">My role</p>
               <ul class="game-role-list">
                 <li>Implemented ragdoll-based combat using Unity physics.</li>
                 <li>Built AI, enemy waves, and level progression tuned for mobile.</li>
-                <li>Ensured responsive controls and smooth performance on a range of devices.</li>
+                <li>Ensured responsive controls and smooth performance.</li>
               </ul>
             </div>
           </div>
@@ -281,26 +251,22 @@
           <!-- 7. Mini Shooters -->
           <div class="game-row">
             <div class="game-row-media">
-              <img src="icons/mini-shooters.png" alt="Mini Shooters icon" />
+              <img src="icons/mini-shooters.png" alt="Mini Shooters icon" loading="lazy" />
               <div class="store-buttons">
-                <a class="store-btn" href="https://apkpure.net/mini-shooters-battleground-sh/com.shootersbattlegroundshootinggame.battlegroundshooting" target="_blank">
-                  Google Play / APK
-                </a>
+                <a class="store-btn" href="https://apkpure.net/mini-shooters-battleground-sh/com.shootersbattlegroundshootinggame.battlegroundshooting" target="_blank">Google Play APK</a>
               </div>
             </div>
-
             <div class="game-row-body">
               <h3 class="game-title">Mini Shooters: Battleground Shooting Game</h3>
               <p class="game-tagline">Multiplayer FPS · iDivineCreation</p>
               <p class="game-desc">
-                Compact online and LAN FPS with multiple modes, loadouts, and responsive shooter controls
-                designed for mobile.
+                Compact online and LAN FPS with modes, loadouts, and responsive shooter controls for mobile.
               </p>
               <p class="game-role-title">My role</p>
               <ul class="game-role-list">
-                <li>Built the game in about six months with matchmaking and multiple modes.</li>
+                <li>Built the game in around six months with matchmaking and multiple modes.</li>
                 <li>Implemented Photon networking, UNET, animations, and progression systems.</li>
-                <li>Focused on stability, feel, and performance for mobile sessions.</li>
+                <li>Focused on feel, stability, and performance for mobile sessions.</li>
               </ul>
             </div>
           </div>
@@ -308,138 +274,149 @@
           <!-- 8. Modern Force Multiplayer Online -->
           <div class="game-row">
             <div class="game-row-media">
-              <img src="icons/modern-force.png" alt="Modern Force Multiplayer Online icon" />
+              <img src="icons/modern-force.png" alt="Modern Force Multiplayer Online icon" loading="lazy" />
               <div class="store-buttons">
-                <a class="store-btn" href="https://apkpure.net/modern-force-multiplayer-online-shooting-game/com.modernforceonlline.multiplayer.freemuliplayeronlinegames" target="_blank">
-                  Google Play / APK
-                </a>
+                <a class="store-btn" href="https://apkpure.net/modern-force-multiplayer-online-shooting-game/com.modernforceonlline.multiplayer.freemuliplayeronlinegames" target="_blank">Google Play APK</a>
               </div>
             </div>
-
             <div class="game-row-body">
               <h3 class="game-title">Modern Force Multiplayer Online</h3>
               <p class="game-tagline">Multiplayer FPS · iDivineCreation</p>
               <p class="game-desc">
-                Online and offline shooter with Free-for-All and Team Deathmatch modes, weapon
-                customization, and LAN support.
+                Online and offline shooter with FFA and TDM, weapon customization, and LAN support.
               </p>
               <p class="game-role-title">My role</p>
               <ul class="game-role-list">
                 <li>Implemented multiplayer using Photon and UNET for online and LAN play.</li>
-                <li>Worked on core shooter feel, stability, and session reliability.</li>
+                <li>Worked on shooter feel, stability, and session reliability.</li>
               </ul>
             </div>
           </div>
 
-          <!-- 9. Merge Glow – Fashion Design -->
+          <!-- 9. Merge Glow Fashion Design -->
           <div class="game-row">
             <div class="game-row-media">
-              <img src="icons/merge-glow.png" alt="Merge Glow – Fashion Design icon" />
+              <img src="icons/merge-glow.png" alt="Merge Glow Fashion Design icon" loading="lazy" />
               <div class="store-buttons">
-                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gameyogi.mergeglow" target="_blank">
-                  Google Play
-                </a>
-                <a class="store-btn" href="https://apps.apple.com/us/app/merge-glow-fashion-design/id6748054851" target="_blank">
-                  App Store
-                </a>
+                <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.gameyogi.mergeglow" target="_blank">Google Play</a>
+                <a class="store-btn" href="https://apps.apple.com/us/app/merge-glow-fashion-design/id6748054851" target="_blank">App Store</a>
               </div>
             </div>
-
             <div class="game-row-body">
               <h3 class="game-title">Merge Glow – Fashion Design</h3>
               <p class="game-tagline">Merge &amp; fashion · Gameyogi</p>
               <p class="game-desc">
-                Merge-based fashion game with LiveOps-ready analytics and data, built to support ongoing
-                tuning against KPIs.
+                Merge-based fashion game with LiveOps-ready analytics and data for tuning against KPIs.
               </p>
               <p class="game-role-title">My role</p>
               <ul class="game-role-list">
                 <li>Configured monetization, analytics, authentication, and datastore SDKs.</li>
-                <li>Created custom event hooks tied to merge actions and progression for KPI tracking.</li>
+                <li>Created custom event hooks tied to merge actions and progression.</li>
                 <li>Led the gameplay pod (design, art, QA), reviewed code, and aligned releases.</li>
               </ul>
             </div>
           </div>
-          <!-- END: VERBATIM -->
         </div>
 
-        <!-- Added button linking to full portfolio page -->
         <div class="center mt-lg">
           <a class="btn btn-primary" href="projects.html">More games &amp; prototypes</a>
         </div>
       </section>
+
+      <!-- HOME: MILESTONES -->
+      <section class="section" id="experience">
+        <h2 class="section-title">Milestones</h2>
+        <ol class="milestones">
+          <li class="mile">
+            <div class="mile-box">
+              <div class="mile-meta">Aug 2023 – Present</div>
+              <h3 class="mile-title">Unity Team Lead — Gameyogi Pvt. Ltd.</h3>
+              <p class="muted">
+                Built the Unity team from scratch; hands-on SDK integrations, meta, and pipelines. Standardized projects and Git flow.
+              </p>
+            </div>
+          </li>
+          <li class="mile">
+            <div class="mile-box">
+              <div class="mile-meta">Oct 2021 – Jul 2023</div>
+              <h3 class="mile-title">Senior Unity Developer — Funcell Games</h3>
+              <p class="muted">
+                Solo-delivered Hyper Hostess, integrated Wisdom/IAP/analytics, and shipped multiple titles with publishers.
+              </p>
+            </div>
+          </li>
+          <li class="mile">
+            <div class="mile-box">
+              <div class="mile-meta">Jul 2020 – Sep 2021</div>
+              <h3 class="mile-title">Unity Developer — Ultragames Entertainment</h3>
+              <p class="muted">
+                Worked on real-money card games, AR, and hyper-casual; created and optimized titles for submissions.
+              </p>
+            </div>
+          </li>
+          <li class="mile">
+            <div class="mile-box">
+              <div class="mile-meta">Jan 2019 – Jul 2020</div>
+              <h3 class="mile-title">Unity Developer — Dweek Studios</h3>
+              <p class="muted">
+                Merged projects, used AssetBundles to reduce size and startup, handled Play Store submissions and ANR fixes.
+              </p>
+            </div>
+          </li>
+          <li class="mile">
+            <div class="mile-box">
+              <div class="mile-meta">May 2017 – Jan 2019</div>
+              <h3 class="mile-title">Jr. Unity 3D Developer — iDivineCreation</h3>
+              <p class="muted">
+                Built multiplayer shooters and racing using Photon and UNET; improved QA efficiency and bug resolution.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <p class="muted small mt-md">
+          Dashed curved arrows indicate progression between roles.
+        </p>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <div>
+            <p class="lead">
+              <strong>Let’s work together.</strong> Open to full-time roles and collaborations.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <strong>Email</strong>:
+                <a href="mailto:vaibhav.mv76@gmail.com">vaibhav.mv76@gmail.com</a>
+              </li>
+              <li>
+                <strong>Phone</strong>:
+                <a href="tel:+917405957677">+91&nbsp;7405957677</a>
+              </li>
+              <li>
+                <strong>LinkedIn</strong>:
+                <a href="https://www.linkedin.com/in/vaibhav-mv" target="_blank" rel="noopener">vaibhav-mv</a>
+              </li>
+            </ul>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            </div>
+          </div>
+          <!-- optional portrait -->
+          <!-- <img class="contact-photo" src="your-photo.jpg" alt="Vaibhav portrait" loading="lazy" /> -->
+        </div>
+      </section>
     </div>
 
-    <!-- EXPERIENCE (Milestones with dashed arrows) -->
-    <section class="section" id="experience">
-      <h2 class="section-title">Milestones</h2>
-      <ol class="milestones">
-        <li class="mile">
-          <div class="mile-box">
-            <div class="mile-meta">Aug 2023 – Present</div>
-            <h3 class="mile-title">Unity Team Lead — Gameyogi Pvt. Ltd.</h3>
-            <p class="muted">Built the Unity team from scratch; hands-on SDK integrations, meta, and pipelines. Standardized projects & Git flow. :contentReference[oaicite:8]{index=8}</p>
-          </div>
-        </li>
-        <li class="mile">
-          <div class="mile-box">
-            <div class="mile-meta">Oct 2021 – Jul 2023</div>
-            <h3 class="mile-title">Senior Unity Developer — Funcell Games</h3>
-            <p class="muted">Solo-delivered “Hyper Hostess”, integrated Wisdom/IAP/analytics; shipped multiple titles with publishers. :contentReference[oaicite:9]{index=9}</p>
-          </div>
-        </li>
-        <li class="mile">
-          <div class="mile-box">
-            <div class="mile-meta">Jul 2020 – Sep 2021</div>
-            <h3 class="mile-title">Unity Developer — Ultragames Entertainment</h3>
-            <p class="muted">Real-money card games, AR, and hyper-casual; created/optimized titles for submissions. :contentReference[oaicite:10]{index=10}</p>
-          </div>
-        </li>
-        <li class="mile">
-          <div class="mile-box">
-            <div class="mile-meta">Jan 2019 – Jul 2020</div>
-            <h3 class="mile-title">Unity Developer — Dweek Studios</h3>
-            <p class="muted">Merged 5 projects, used AssetBundles to cut size/startup; Play Store submissions & ANR fixes. :contentReference[oaicite:11]{index=11}</p>
-          </div>
-        </li>
-        <li class="mile">
-          <div class="mile-box">
-            <div class="mile-meta">May 2017 – Jan 2019</div>
-            <h3 class="mile-title">Jr. Unity 3D Developer — iDivineCreation</h3>
-            <p class="muted">Multiplayer shooters/racing using Photon & UNET; improved QA efficiency and bug resolution. :contentReference[oaicite:12]{index=12}</p>
-          </div>
-        </li>
-      </ol>
-      <p class="muted small mt-md">Dashed curved arrows indicate progression between roles.</p>
-    </section>
-
-    <!-- CONTACT (ending) -->
-    <section class="section" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-grid">
-        <div>
-          <p class="lead"><strong>Let’s work together.</strong> Open to full-time roles & collaborations.</p>
-          <ul class="contact-list">
-            <li><strong>Email:</strong> <a href="mailto:vaibhav.mv76@gmail.com">vaibhav.mv76@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+917405957677">+91&nbsp;7405957677</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vaibhav-mv" target="_blank" rel="noopener">vaibhav-mv</a></li>
-          </ul>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-          </div>
-        </div>
-        <!-- optional portrait like reference site -->
-        <!-- <img class="contact-photo" src="your-photo.jpg" alt="Vaibhav portrait" loading="lazy"> -->
-      </div>
-    </section>
-
     <div class="footer">
-      © <span id="year"></span> Vaibhav Marvaniya · Built with HTML &amp; GitHub Pages
+      <span id="year"></span> · Vaibhav Marvaniya · Built with HTML &amp; GitHub Pages
     </div>
   </main>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
