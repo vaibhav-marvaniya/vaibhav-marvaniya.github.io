@@ -57,13 +57,31 @@ a:hover {
 .nav-brand {
   font-weight: 800;
   letter-spacing: .06em;
+  font-size: 1.05rem;          /* bigger "VAIBHAV MARVANIYA" */
 }
+
 .nav-links a {
-  margin-left: 18px;
+  margin-left: 20px;
   font-weight: 600;
+  font-size: .98rem;           /* bigger Home / Portfolio / Resume / Contact */
 }
+
 .nav-links a:hover {
   color: var(--accent);
+}
+
+/* Make Contact look like a primary button in the top bar */
+.nav-links .nav-contact {
+  padding: .4rem .9rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.nav-links .nav-contact:hover {
+  color: #fff;
+  background: #1d4ed8;
 }
 
 /* LAYOUT */
@@ -448,11 +466,11 @@ section.card {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  background: #eef4ff;
-  border: 1px solid rgba(148, 163, 184, .45);
+  background: #fff;                          /* same as portfolio cards */
+  border: 1px solid var(--border);           /* same border */
   border-radius: 16px;
-  padding: 16px;
-  box-shadow: 0 12px 30px rgba(15, 23, 42, .08);
+  padding: 1rem 1.1rem;
+  box-shadow: 0 8px 22px rgba(2, 6, 23, .04);/* same soft shadow as .game-row */
   color: #111827;
 }
 
