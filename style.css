@@ -294,46 +294,37 @@ section.card {
 .mt-lg{margin-top:1.75rem}
 
 /* Two-column block for Skills & Education */
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-@media (max-width: 1000px){.two-col{grid-template-columns:1fr}}
+/* Skills & Education layout – single column on all screens */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
 
 /* Contact ending */
 .contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
 .contact-photo{width:240px;height:240px;border-radius:18px;object-fit:cover;border:4px solid rgba(0,0,0,.08)}
 .contact-list{list-style:none;margin:10px 0 18px;padding:0}
 .contact-list li{margin:6px 0}
+/* Milestones – simple stacked cards, no connecting lines */
 
-/* Milestones timeline with dashed curved arrows (pure CSS/SVG) */
 .milestones {
   list-style: none;
   margin: 1rem 0 0;
   padding: 0;
 }
 
-/* One milestone card */
 .mile {
-  position: relative;
-  padding-bottom: 42px;   /* inner spacing for the card */
-  margin-bottom: 32px;    /* space where the arrow will appear */
+  margin-bottom: 24px;
 }
 
-/* Curved arrow BETWEEN milestones (from bottom of one card to the next) */
-.mile:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 100%;          /* start at the bottom edge of the card */
-  width: 24px;
-  height: 42px;       /* length of the arrow between cards */
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www...36b8eed"/></marker></defs></svg>')
-              center top / contain no-repeat;
-  opacity: .8;
+.mile:last-child {
+  margin-bottom: 0;
 }
 
-/* No arrow after the last milestone */
-.mile:last-child:before {
-  display: none;
+/* make sure no old arrow style leaks in */
+.mile::before {
+  content: none !important;
 }
 
 .mile-box {
@@ -347,6 +338,7 @@ section.card {
   box-shadow: 0 12px 30px rgba(15, 23, 42, .08);
   color: #111827;
 }
+
 
 .mile-meta{color:#e11d48;font-weight:800}
 .mile-title{margin:0}
