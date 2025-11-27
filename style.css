@@ -49,25 +49,40 @@ a:hover {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: .8rem 1.5rem;
+  padding: 1rem 2rem;          /* taller + more side padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .nav-brand {
   font-weight: 800;
-  letter-spacing: .06em;
-  font-size: 1.05rem;          /* bigger "VAIBHAV MARVANIYA" */
+  letter-spacing: .08em;
+  font-size: 1.15rem;          /* bigger "VAIBHAV MARVANIYA" */
 }
 
 .nav-links a {
-  margin-left: 20px;
+  margin-left: 24px;
   font-weight: 600;
-  font-size: .98rem;           /* bigger Home / Portfolio / Resume / Contact */
+  font-size: 1rem;             /* bigger Home / Portfolio / Resume / Contact */
 }
 
 .nav-links a:hover {
   color: var(--accent);
+}
+
+/* Contact as a big pill button in the nav */
+.nav-links .nav-contact {
+  padding: .45rem 1rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.nav-links .nav-contact:hover {
+  background: #1d4ed8;
+  color: #fff;
 }
 
 /* Make Contact look like a primary button in the top bar */
@@ -129,8 +144,8 @@ section.card {
 .hero-text {
   font-size: 1.05rem;
   color: #334155;
-  max-width: 900px;
-  line-height: 1.7;  /* easier to read, especially on mobile */
+  max-width: none;      /* let text go out to the hero width */
+  line-height: 1.7;     /* nicer for long paragraphs */
 }
 .hero-cta-row {
   margin-top: 1.5rem;
