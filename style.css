@@ -297,11 +297,9 @@ section.card {
 /* Skills & Education layout – single column on all screens */
 .two-col {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  column-gap: 32px;
-  row-gap: 12px;   /* <- much smaller vertical gap */
+  grid-template-columns: 1fr; /* single column */
+  row-gap: 16px;              /* even vertical spacing between blocks */
 }
-
 
 /* Contact ending */
 .contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
