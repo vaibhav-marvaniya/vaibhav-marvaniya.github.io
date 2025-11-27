@@ -103,6 +103,11 @@ section.card {
   box-shadow: 0 10px 28px rgba(2, 6, 23, .04);
 }
 
+.section-title {
+  font-size: 1.35rem;      /* bigger than body text */
+  font-weight: 800;
+  margin: 0 0 0.9rem;      /* space below heading */
+}
 /* HERO */
 .hero {
   max-width: 1200px;
@@ -166,15 +171,23 @@ section.card {
 }
 .store-btn {
   display: inline-block;
-  border: 1px solid var(--border);
-  background: #fff;
-  color: #0f172a;
   font-weight: 700;
-  padding: .5rem .75rem;
-  border-radius: 10px;
-  font-size: .95rem;
+  padding: .5rem .9rem;
+  border-radius: 999px;
+  font-size: .9rem;
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  color: #1f2937;
+  transition: .18s background, .18s color, .18s transform, .18s box-shadow;
 }
-.store-btn:hover { color: var(--accent); }
+
+.store-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(37, 99, 235, .35);
+  transform: translateY(-1px);
+}
+
 
 /* WHAT I DO */
 .section-subtitle {
