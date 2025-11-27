@@ -107,7 +107,7 @@ section.card {
 .hero-text {
   font-size: 1.05rem;
   color: #334155;
-  max-width: 900px;
+  max-width: none;   /* or just remove this line */
 }
 
 /* BUTTONS */
