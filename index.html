@@ -8,13 +8,14 @@
 </head>
 <body>
   <!-- NAVBAR: Home / Portfolio / Contact -->
-  <nav class="nav">
+   <nav class="nav">
     <div class="nav-inner">
       <div class="nav-brand">VAIBHAV MARVANIYA</div>
       <div class="nav-links">
         <a href="#top">Home</a>
         <a href="#featured-games">Portfolio</a>
-        <a href="#contact">Contact</a>
+        <a href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="#contact" class="nav-contact">Contact</a>
       </div>
     </div>
   </nav>
@@ -550,16 +551,6 @@
               game or help level up a small Unity team, I’d be happy to talk.
             </p>
 
-            <div class="btn-row">
-              <a
-                class="btn btn-primary"
-                href="resume.pdf"
-                target="_blank"
-                rel="noopener"
-              >
-                Download Resume
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -573,5 +564,17 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-</body>
+  
+    <script>
+      // If the page loads on #featured-games (after using the portfolio button),
+      // jump back to the top and clean the URL.
+      window.addEventListener('load', function () {
+        if (window.location.hash === '#featured-games') {
+          history.replaceState(null, '', 'index.html');
+          window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+        }
+      });
+    </script>
+  </body>
 </html>
+
