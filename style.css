@@ -413,6 +413,10 @@ section.card {
   filter: brightness(1.05);
 }
 
+/* keep contact icons readable on hover/focus */
+.contact-social:hover,
+.contact-social:focus { color:#fff; }
+
 .contact-right p {
   margin-top: 0;
   margin-bottom: .8rem;
