@@ -26,15 +26,6 @@ body {
 main#top {
   scroll-margin-top: 80px; /* roughly navbar height */
 }
-/* accessible skip link + focus ring */
-.skip-link{position:absolute;left:-9999px;top:auto}
-.skip-link:focus{left:1rem;top:1rem;z-index:1000;background:#fff;border:2px solid var(--accent);padding:.5rem;border-radius:8px}
-:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-
-@media (prefers-reduced-motion: reduce){
-  *{transition:none !important; animation:none !important}
-  .store-btn:hover,.btn:hover,.contact-social:hover{transform:none !important}
-}
 
 /* LINKS */
 a {
@@ -170,12 +161,6 @@ section.card {
 .btn-primary:hover {
   filter: brightness(1.05);
 }
-/* keep primary button text white on hover/focus */
-.btn-primary:hover,
-.btn-primary:focus { color:#fff; }
-
-/* keep the Contact pill white on hover in the nav */
-.nav-links .nav-contact:hover { color:#fff; }
 
 /* STORE BUTTONS (portfolio cards) */
 .store-buttons {
@@ -203,8 +188,6 @@ section.card {
   transform: translateY(-1px);
 }
 
-/* extra breathing room above the Contact section */
-#contact{ margin-top: 2.5rem; }
 
 /* WHAT I DO */
 .section-subtitle {
