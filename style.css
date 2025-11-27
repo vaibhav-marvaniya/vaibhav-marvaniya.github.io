@@ -81,20 +81,6 @@ a:hover {
 }
 
 .nav-links .nav-contact:hover {
-  background: #1d4ed8;
-  color: #fff;
-}
-
-/* Make Contact look like a primary button in the top bar */
-.nav-links .nav-contact {
-  padding: .4rem .9rem;
-  border-radius: 999px;
-  border: 1px solid var(--accent);
-  background: var(--accent);
-  color: #fff;
-}
-
-.nav-links .nav-contact:hover {
   color: #fff;
   background: #1d4ed8;
 }
@@ -458,25 +444,6 @@ section.card {
 }
 /* Milestones – simple stacked cards, no connecting lines */
 
-.milestones {
-  list-style: none;
-  margin: 1rem 0 0;
-  padding: 0;
-}
-
-.mile {
-  margin-bottom: 24px;
-}
-
-.mile:last-child {
-  margin-bottom: 0;
-}
-
-/* make sure no old arrow style leaks in */
-.mile::before {
-  content: none !important;
-}
-
 .mile-box {
   display: grid;
   grid-template-columns: 1fr;
@@ -532,12 +499,6 @@ section.card {
   font-size: 0.95rem;
   font-weight: 700;
   color: #111827;
-}
-
-.more-games-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.75rem;
 }
 
 .more-game-card {
