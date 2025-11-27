@@ -19,7 +19,7 @@ body {
   margin: 0;
   color: var(--text);
   background: var(--bg);
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: Calibri, "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 
@@ -304,20 +304,50 @@ section.card {
 .contact-list li{margin:6px 0}
 
 /* Milestones timeline with dashed curved arrows (pure CSS/SVG) */
-.milestones{list-style:none;margin:1rem 0 0;padding:0}
-.mile{position:relative;padding-bottom:42px}
-.mile:before{
-  content:"";
-  position:absolute;left:calc(50% - 12px);top:0;bottom:0;width:24px;
-  background:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="220" viewBox="0 0 24 220"><path d="M12 0 C 12 70, 12 150, 12 220" stroke="%236b8eed" stroke-width="3" stroke-dasharray="8 8" fill="none" marker-end="url(%23arrow)"/><defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="6" refY="6" orient="auto-start-reverse"><path d="M0,0 L12,6 L0,12 z" fill="%236b8eed"/></marker></defs></svg>') center top/contain no-repeat;
-  opacity:.8;
+.milestones {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
 }
-.mile:last-child:before{display:none}
-.mile-box{
-  display:grid;grid-template-columns:1fr;gap:10px;
-  background:#eef4ff;border:1px solid rgba(148,163,184,.45);
-  border-radius:16px;padding:16px;box-shadow:0 12px 30px rgba(15,23,42,.08);color:#111827
+
+/* One milestone card */
+.mile {
+  position: relative;
+  padding-bottom: 42px;   /* inner spacing for the card */
+  margin-bottom: 32px;    /* space where the arrow will appear */
 }
+
+/* Curved arrow BETWEEN milestones (from bottom of one card to the next) */
+.mile:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;          /* start at the bottom edge of the card */
+  width: 24px;
+  height: 42px;       /* length of the arrow between cards */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www...36b8eed"/></marker></defs></svg>')
+              center top / contain no-repeat;
+  opacity: .8;
+}
+
+/* No arrow after the last milestone */
+.mile:last-child:before {
+  display: none;
+}
+
+.mile-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background: #eef4ff;
+  border: 1px solid rgba(148, 163, 184, .45);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, .08);
+  color: #111827;
+}
+
 .mile-meta{color:#e11d48;font-weight:800}
 .mile-title{margin:0}
 
