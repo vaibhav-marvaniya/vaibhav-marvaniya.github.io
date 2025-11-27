@@ -22,6 +22,10 @@ body {
   font-family: Calibri, "Segoe UI", system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
+/* Make sure the #top anchor isn't hidden behind the sticky nav */
+main#top {
+  scroll-margin-top: 80px; /* roughly navbar height */
+}
 
 /* LINKS */
 a {
@@ -107,7 +111,11 @@ section.card {
 .hero-text {
   font-size: 1.05rem;
   color: #334155;
-  max-width: none;   /* or just remove this line */
+  max-width: 900px;
+  line-height: 1.7;  /* easier to read, especially on mobile */
+}
+.hero-cta-row {
+  margin-top: 1.5rem;
 }
 
 /* BUTTONS */
@@ -482,6 +490,15 @@ section.card {
   color: var(--muted);
   font-style: italic;
   font-size: 0.98rem;
+}
+
+.more-games-group-title {
+  grid-column: 1 / -1;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #111827;
 }
 
 .more-games-grid {
