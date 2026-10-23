@@ -2,20 +2,40 @@
 (() => {
   document.documentElement.classList.add('has-js');
   const THEMES = ['editor','runtime','blueprint','hybrid'];
-  const THEME_KEY = 'vm_portfolio_theme_v2';
+  const SHORT_LABELS = {
+    editor: 'Editor', runtime: 'C# Runtime', blueprint: 'Blueprint', hybrid: 'Hybrid'
+  };
   const select = document.getElementById('theme-select');
+  const themeControl = window.portfolioTheme;
   let theme = document.documentElement.dataset.theme;
   if (!THEMES.includes(theme)) theme = 'hybrid';
   document.documentElement.dataset.theme = theme;
   if (select) {
-    select.value = theme;
+    const autoOption = select.querySelector('option[value="auto"]');
+    const syncPicker = () => {
+      const current = document.documentElement.dataset.theme;
+      if (autoOption) autoOption.textContent = `Auto · ${SHORT_LABELS[current] || 'Hybrid'}`;
+      select.value = themeControl?.mode === 'manual' ? current : 'auto';
+      select.title = themeControl?.mode === 'manual'
+        ? 'Manual theme: this choice is remembered on future visits. Select Auto to rotate themes again.'
+        : 'Automatic theme rotation is enabled for each new browsing session.';
+    };
+    syncPicker();
     select.addEventListener('change', () => {
+      if (select.value === 'auto') {
+        themeControl?.useAuto();
+        syncPicker();
+        return;
+      }
       if (!THEMES.includes(select.value)) return;
-      document.documentElement.dataset.theme = select.value;
-      try { localStorage.setItem(THEME_KEY,select.value); } catch (_) { /* storage can be unavailable */ }
-      if (typeof window.portfolioEvent === 'function') window.portfolioEvent('theme_change',{ theme_name: select.value });
-      // Visible transitions reveal any freshly activated theme-specific hero.
+      if (themeControl) themeControl.setManual(select.value);
+      else document.documentElement.dataset.theme = select.value;
+      if (typeof window.portfolioEvent === 'function') {
+        window.portfolioEvent('theme_change', { theme_name: select.value });
+      }
+      // Reveal freshly activated theme-specific hero content.
       document.querySelectorAll('.hero-mode .reveal').forEach(el => el.classList.add('is-visible'));
+      syncPicker();
     });
   }
   const navButton = document.querySelector('.nav-toggle');
